@@ -5,10 +5,7 @@ setImmediate(()=>{
   
 });
 
-Promise.resolve(()=>{
-  console.log("promise resolve");
-  
-});
+Promise.resolve("Promise").then(console.log);
 
 fs.readFile("./file.txt","utf-8",()=>{
   console.log("file reading");
